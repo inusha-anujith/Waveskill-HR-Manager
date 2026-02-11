@@ -1,16 +1,18 @@
 import React from 'react';
 import Login from './components/Login';
 import Profile from './components/Profile';
-import Attendance from './components/Attendance'; // 1. Import the new Attendance component
+import Attendance from './components/Attendance';
+import Leave from './components/Leave'; // 1. Import your new Leave component
 
 function App() {
   return (
     <div className="App">
-      {/* 2. Switch to Attendance to see the design live */}
+      {/* 2. Switch to <Leave /> to see your latest work */}
       
       {/* <Login /> */}
       {/* <Profile /> */}
-      <Attendance />
+      {/* <Attendance /> */}
+      <Leave />
       
     </div>
   );
