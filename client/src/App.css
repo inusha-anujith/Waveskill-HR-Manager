@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+/* 1. Global Layout Standard - Stops the "jump" between pages */
+.portal-container {
+  padding: 40px 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  background-color: #FFFFFF;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* 2. Standardized Header - Keeps the top text perfectly still */
+.portal-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 30px;
+  height: 60px; /* Fixed height is vital for alignment */
 }
 
-.App-link {
-  color: #61dafb;
+.portal-header h1 {
+  font-size: 26px;
+  margin: 0;
+  font-weight: 600;
+  color: #111;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.portal-header p {
+  color: #888;
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+/* 3. Navigation Menu */
+.portal-nav {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+  height: 40px; /* Ensures consistent vertical spacing */
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #6B7280;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+/* 4. Icon Sizing - Makes emojis match Figma line-art icons */
+.nav-item span {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.nav-item.active {
+  background-color: #f1f1f1;
+  color: #111;
+  font-weight: 600;
+}
+
+/* 5. Pill-Shaped Logout Button - Exact match for Figma design */
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 22px;
+  border: 1px solid #E5E7EB;
+  border-radius: 50px; /* High value for the perfect pill shape */
+  background-color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #F9FAFB;
+}
+
+/* Global App Reset */
+.App {
+  min-height: 100vh;
+  background-color: #FFFFFF;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Provides clean spacing between the SVG and text */
+  text-decoration: none;
+  color: #111827;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+/* Ensures the SVGs have the correct line thickness and color */
+.nav-item svg {
+  color: #111827;
+  stroke-width: 2px;
+}
+
+.nav-item.active {
+  background-color: #f1f1f1;
 }
