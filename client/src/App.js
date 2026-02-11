@@ -3,19 +3,20 @@ import Login from './components/Login';
 import Profile from './components/Profile';
 import Attendance from './components/Attendance';
 import Leave from './components/Leave';
-import Announcements from './components/Announcements'; // 1. Import your new Leave component
+import Announcements from './components/Announcements';
+import Projects from './components/Projects'; // 1. Import your final Projects component
 
 function App() {
   return (
     <div className="App">
-      {/* 2. Switch to <Leave /> to see your latest work */}
+      {/* 2. Set Projects as the active component to view it live */}
       
       {/* <Login /> */}
       {/* <Profile /> */}
       {/* <Attendance /> */}
       {/* <Leave /> */}
-
-      <Announcements />
+      {/* <Announcements /> */}
+      <Projects />
       
     </div>
   );

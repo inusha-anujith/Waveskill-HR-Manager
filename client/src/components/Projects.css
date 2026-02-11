@@ -1,0 +1,41 @@
+.portal-container { padding: 40px 80px; font-family: 'Inter', sans-serif; background-color: #fff; }
+.portal-header { display: flex; justify-content: space-between; margin-bottom: 30px; }
+.portal-header h1 { font-size: 26px; margin: 0; }
+.portal-header p { color: #888; margin-top: 5px; font-size: 14px; }
+
+.logout-btn { display: flex; align-items: center; gap: 8px; border: 1px solid #ddd; background: #fff; padding: 8px 16px; border-radius: 8px; cursor: pointer; }
+
+.portal-nav { display: flex; gap: 12px; margin-bottom: 40px; }
+.nav-item { padding: 10px 20px; border-radius: 10px; font-size: 14px; cursor: pointer; display: flex; align-items: center; gap: 8px; }
+.nav-item.active { background-color: #f1f1f1; font-weight: 600; }
+
+.projects-section { border: 1px solid #eee; border-radius: 16px; padding: 30px; margin-bottom: 30px; }
+.section-intro h3 { margin: 0; font-size: 18px; }
+.section-intro p { color: #888; font-size: 14px; margin: 5px 0 30px; }
+
+.project-display-card { border: 1px solid #eee; border-radius: 16px; width: 450px; overflow: hidden; }
+.project-info-top { padding: 30px; }
+.project-info-top h2 { margin: 0 0 15px; font-size: 24px; font-weight: 600; }
+
+.project-tags { display: flex; gap: 10px; margin-bottom: 30px; }
+.p-tag { padding: 4px 12px; border-radius: 6px; font-size: 11px; font-weight: 600; }
+.black-tag { background: #000; color: #fff; }
+.pink-tag { background: #FCE8E8; color: #E02424; }
+
+.progress-container p { font-size: 12px; margin-bottom: 10px; color: #111; }
+.progress-bar-bg { background: #E5E7EB; height: 6px; border-radius: 10px; margin-bottom: 25px; }
+.progress-bar-fill { background: #000; height: 100%; width: 40%; border-radius: 10px; }
+
+.calendar-trigger { font-size: 20px; }
+
+.project-footer { padding: 20px 30px; border-top: 1px solid #eee; display: flex; align-items: center; gap: 12px; }
+.member-avatar { width: 32px; height: 32px; background: #0000FF; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; }
+.member-name { font-size: 14px; font-weight: 500; }
+
+.stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.stat-card { border: 1px solid #eee; padding: 25px; border-radius: 12px; }
+.stat-card p { margin: 0 0 10px; font-size: 13px; color: #888; }
+.stat-value { font-size: 36px; font-weight: 500; }
+
+.orange-text { color: #FF9800; }
+.green-text { color: #4CAF50; }
