@@ -2,7 +2,8 @@ import React from 'react';
 import Login from './components/Login';
 import Profile from './components/Profile';
 import Attendance from './components/Attendance';
-import Leave from './components/Leave'; // 1. Import your new Leave component
+import Leave from './components/Leave';
+import Announcements from './components/Announcements'; // 1. Import your new Leave component
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
       {/* <Login /> */}
       {/* <Profile /> */}
       {/* <Attendance /> */}
-      <Leave />
+      {/* <Leave /> */}
+
+      <Announcements />
       
     </div>
   );
